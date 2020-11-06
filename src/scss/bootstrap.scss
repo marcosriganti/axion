@@ -1,0 +1,211 @@
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+// @import "images";
+// @import "code";
+@import "grid";
+// @import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+// @import "card";
+// @import "breadcrumb";
+// @import "pagination";
+// @import "badge";
+// @import "jumbotron";
+// @import "alert";
+// @import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+
+@import "modal";
+// @import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+#inclusion{
+    .video{
+        background-image: url('../images/inclusion-bg.png');
+    }
+}
+#coleccion {
+    h2{
+        img{
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+}
+#companies{
+    h3 {
+        img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+    }
+    @media screen and (min-width: 768px){
+        .col-md-4:nth-child(2):before,
+        .col-md-4:nth-child(2):after {
+            content: " + ";
+            position: absolute;
+            left: 0;
+            top: 80px;
+            font-size: 32px;
+            color: #fff;
+        }
+        .col-md-4:nth-child(2):after {
+            right: 0;
+            left:inherit
+        }
+    }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: #ae0065;
+    border: 10px #ae0065 solid;
+    padding: 10px;
+
+    border-radius: 30px;
+}
+#slider{
+    background-image: url('../images/slider-bg.jpg');
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 768px){
+        background-size:inherit
+    }
+}
+.carousel-item{
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    @media screen and (max-width: 768px){
+        min-height: 500px;;
+        img{
+            margin-top: 100px
+        }
+        .h1{
+            font-size: 2.5rem !important;
+        }
+    }
+    .h1{
+        font-family: 'NicknameDEMO';
+        font-size: 3.5rem;
+    }
+    img{
+        max-width: 100%;
+        max-height: 450px;
+    }
+}
+.circle{
+    margin: 35px auto;
+    display: block;
+    border-radius: 400px;
+    padding: 80px 40px 20px;
+    width: 390px;
+    height: 390px;
+    font-size: 24px;
+    border: 2px solid #fff;
+    font-family: Montserrat, sans-serif;
+    @media screen and (max-width: 768px){
+        padding: 40px 40px 20px;
+        width: 250px;
+        height: 250px;
+        font-size: 16px;
+    }
+}
+.estacion{
+    font-family: Montserrat, sans-serif;
+    h6,p{
+        font-family: Montserrat, sans-serif;
+    }
+    h6{
+        border-bottom: 1px solid #ccc;
+    }
+    p{
+            margin-bottom: .2rem;
+    }
+}
+label.error{
+    color: $primary;
+    padding: 8px 0;
+}
+.footer .container,
+.navbar .container{
+    flex: 2;
+    flex-direction: row;
+    align-items: baseline;
+}
+.logo-container{
+    flex:1;
+    justify-content: flex-start;
+    display: flex;
+    // flex-direction: column;
+}
+footer .logo-container{
+    flex: .4
+}
+
+footer .nav.nav-pills,
+.navbar .nav.nav-pills{
+    flex:1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer .nav.nav-pills{
+    flex: 1.1
+
+}
+@media screen and (min-width: 768px){
+.navbar-brand{
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar-brand{
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .logo-container{
+        flex-direction: row;
+    }
+    .navbar .nav.nav-pills,
+    footer .nav.nav-pills{
+        flex-direction: row;
+        
+    }
+}
+
+ @font-face {
+            font-family: 'NicknameDEMO';
+            src: url('../font/NicknameDEMO.eot');
+            src: url('../font/NicknameDEMO.eot?#iefix') format('embedded-opentype'),
+                url('../font/NicknameDEMO.svg#NicknameDEMO') format('svg'),
+                url('../font/NicknameDEMO.ttf') format('truetype'),
+                url('../font/NicknameDEMO.woff') format('woff'),
+                url('../font/NicknameDEMO.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
