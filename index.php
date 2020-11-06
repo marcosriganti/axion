@@ -12,8 +12,8 @@ if (!empty($_POST['nombre'])) {
     $mail->Port = 465;
 
     $mail->Port = 587;
-    $mail->Username   = "divertiteconaxion@gmail.com"; // SMTP account username
-    $mail->Password   = "PROMORASTI";        // SMTP account password
+    $mail->Username   = ""; // SMTP account username
+    $mail->Password   = "";        // SMTP account password
     $mail->SetFrom("divertiteconaxion@gmail.com", "PROMORASTI");
     $mail->FromName = 'Divertite con Axion';
     $mail->addAddress('divertiteconaxion@gmail.com', 'Divertite con Axion');     // Add a recipient
